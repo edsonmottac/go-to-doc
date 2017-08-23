@@ -1,0 +1,50 @@
+{
+    "head": {
+        "vars": ["url", "nome", "cidade", "lng", "lat"]
+    },
+    "results": {
+        "bindings": [{
+                "url": {
+                    "type": "uri",
+                    "value": "http://localhost:3030/2653362"
+                },
+                "nome": {
+                    "type": "literal",
+                    "value": "UBS CARDEAL DA SILVA"
+                },
+                "cidade": {
+                    "type": "literal",
+                    "value": "Salvador"
+                },
+                "lng": {
+                    "type": "literal",
+                    "value": "-12.9807972908016"
+                },
+                "lat": {
+                    "type": "literal",
+                    "value": "-38.488905429839"
+                }
+            }, {
+                "url": {
+                    "type": "uri",
+                    "value": "http://localhost:3030/3152820"
+                },
+                "nome": {
+                    "type": "literal",
+                    "value": "USF DA FEDERACAO"
+                },
+                "cidade": {
+                    "type": "literal",
+                    "value": "Salvador"
+                },
+                "lng": {
+                    "type": "literal",
+                    "value": "-12.9953670501705"
+                },
+                "lat": {
+                    "type": "literal",
+                    "value": "-38.5021448135365"
+                }
+            }]
+    }
+}  
