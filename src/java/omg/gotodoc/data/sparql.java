@@ -272,6 +272,43 @@ public class sparql {
         }
 
     }
-
+    
     // </editor-fold>
+
+
+public String getComboListEstado1(String item) throws UnsupportedEncodingException {
+
+        String queryString = loadPrefixos();
+        queryString = queryString + " SELECT DISTINCT ?estado                                    ";
+        queryString = queryString + " WHERE {                                                           ";
+        queryString = queryString + "   ?url vcard:uf ?estado 				";
+        queryString = queryString + "   }                                                               ";
+        queryString = queryString + " ORDER BY ?estado                                           ";
+        queryString = queryString + "                                                                   ";
+
+        Query query = QueryFactory.create(queryString);
+        qexec = QueryExecutionFactory.sparqlService("http://localhost:3030/CNESDataRecource/query", query);
+        try {
+            ResultSet results = qexec.execSelect();
+            String options = "";
+            while (results.hasNext()) {
+                QuerySolution soln = results.nextSolution();
+                RDFNode estado = soln.get("estado");
+                options = options + "<option value='" + estado + "'";
+                if (item != null) {
+                    item = new String(item.getBytes(), "UTF-8");
+                }
+                if (estado.toString().equals(item)) {
+                    options = options + " selected ";
+                }
+                options = options + ">" + estado + "</option>";
+            }
+            return options;
+
+        } finally {
+            qexec.close();
+        }
+
+    }
+
 }
