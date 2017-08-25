@@ -4,24 +4,24 @@
     Author     : edson
 --%>
 
-<%@page import="omg.gotodoc.service.CustomQueryService"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%@page import="omg.gotodoc.data.sparql"%>
 
-<%@page import="org.apache.jena.query.Query;"%>
-<%@page import="org.apache.jena.query.QueryExecution;"%>
-<%@page import="org.apache.jena.query.QueryExecutionFactory;"%>
-<%@page import="org.apache.jena.query.QueryFactory;"%>
-<%@page import="org.apache.jena.query.QuerySolution;"%>
-<%@page import="org.apache.jena.query.ResultSet;"%>
-<%@page import="org.apache.jena.rdf.model.Literal;"%>
-<%@page import="org.apache.jena.rdf.model.Model;"%>
-<%@page import="org.apache.jena.rdf.model.RDFNode;"%>
-<%@page import="org.apache.jena.rdf.model.Resource;"%>
-<%@page import="org.apache.jena.util.FileManager;"%>
+<%@page import="org.apache.jena.query.Query"%>
+<%@page import="org.apache.jena.query.QueryExecution"%>
+<%@page import="org.apache.jena.query.QueryExecutionFactory"%>
+<%@page import="org.apache.jena.query.QueryFactory"%>
+<%@page import="org.apache.jena.query.QuerySolution"%>
+<%@page import="org.apache.jena.query.ResultSet"%>
+<%@page import="org.apache.jena.rdf.model.Literal"%>
+<%@page import="org.apache.jena.rdf.model.Model"%>
+<%@page import="org.apache.jena.rdf.model.RDFNode"%>
+<%@page import="org.apache.jena.rdf.model.Resource"%>
+<%@page import="org.apache.jena.util.FileManager"%>
 
-<%@page import="java.io.ByteArrayOutputStream;"%>
+<%@page import="java.io.ByteArrayOutputStream"%>
 <%@page import="org.apache.jena.query.ResultSetFormatter"%>
 
 <!DOCTYPE html>
